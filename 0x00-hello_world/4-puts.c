@@ -1,10 +1,6 @@
 #include <stdio>
 /**
- * main - Programming is like building a multilingual puzzle
+ * main - A program that prints the size of various computer types
  *  Return: 0 (Succes)
  */
-int main(void)
-{
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
-}
+
