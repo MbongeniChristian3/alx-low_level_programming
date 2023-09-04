@@ -2,32 +2,33 @@
 #include "main.h"
 
 /**
- * _atoi - converts a steing to an integer
- * @s: string to be convrted
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
  * Return: the int converted from string
  */
 
 int _atoi(char *s)
 {
-	int i, d, n, len, f, digit,
+	int i, d, n, len, digit, f;
 
 	i = 0;
 	d = 0;
 	n = 0;
 	len = 0;
-	f = 0;
 	digit = 0;
+	f = 0;
 
 	while (s[len] != '\0')
 		len++;
 	while (i < len && f == 0)
 	{
 		if (s[i] == '-')
-			++d
+			++d;
 
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
+
 			if (d % 2)
 				digit = -digit;
 			n = n * 10 + digit;
@@ -41,6 +42,7 @@ int _atoi(char *s)
 
 	if (f == 0)
 		return (0);
+
 	return (n);
 }
 
@@ -56,7 +58,7 @@ int main(int argc, char *argv[])
 {
 	int result, num1, num2;
 
-	if (argc < 3 || argc 3)
+	if (argc < 3 || argc < 3)
 	{
 		printf("Error\n");
 		return (1);
