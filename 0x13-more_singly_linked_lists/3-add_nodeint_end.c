@@ -1,6 +1,5 @@
 #include "lists.h"
 
-
 /**
  * add_nodeint_end - Adds a new node at the end of listint_t list
  * @head: a pointer to the addres of the head of listint_t list
@@ -31,5 +30,3 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 	return (*head);
 }
-
-
