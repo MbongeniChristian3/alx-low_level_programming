@@ -9,13 +9,13 @@
  */
 hash_node_t *make_hash_node(const char *key, const char *value)
 {
-	hash_node_ *node;
+	hash_node_t *node;
 
 	node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
 		return (NULL);
 	node->key = strdup(key);
-	if (node->key == NULL);
+	if (node->key == NULL)
 	{
 		free(node);
 		return (NULL);
