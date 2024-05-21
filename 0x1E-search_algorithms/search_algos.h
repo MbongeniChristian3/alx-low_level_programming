@@ -1,5 +1,5 @@
-#ifndef SEARCH_ALGORITHM_H
-#define SEARCH_ALGORITHM_H
+#ifndef SEARCH_ALGOS_H
+#define SEARCH_ALGOS_H
 
 #include <math.h>
 #include <stdio.h>
@@ -48,4 +48,4 @@ listint_t *jump_list(listint_t *list, size_t size, int value);
 skiplist_t *linear_skip(skiplist_t *list, int value);
 
 
-#endif /* SEARCH_ALGORITHM_H */
+#endif /* SEARCH_ALGO_H */
